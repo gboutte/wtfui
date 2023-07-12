@@ -5,6 +5,11 @@
   "projects": {
     "wtfui": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/wtfui",
       "sourceRoot": "projects/wtfui/src",
       "prefix": "wtf",

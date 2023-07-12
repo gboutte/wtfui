@@ -3,5 +3,5 @@
  */
 
 export * from './lib/wtfui.service';
-export * from './lib/wtfui.component';
-export * from './lib/wtfui.module';
+export * from './lib/buttons/buttons.module';
+export * from './lib/buttons/square3d-button/square3d-button.component'

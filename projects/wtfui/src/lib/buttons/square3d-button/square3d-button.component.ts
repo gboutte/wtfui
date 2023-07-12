@@ -3,7 +3,7 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'wtf-square3d-button',
   templateUrl: './square3d-button.component.html',
-  styleUrls: ['./square3d-button.component.css']
+  styleUrls: ['./square3d-button.component.scss']
 })
 export class Square3dButtonComponent {
   @Input() type: string = "button";
