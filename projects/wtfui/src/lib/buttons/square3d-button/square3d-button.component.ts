@@ -9,7 +9,7 @@ export class Square3dButtonComponent {
   @Input() type: string = "button";
   @Input() disabled: boolean = false;
   @Input() baseColor: 'yellow' = 'yellow';
-  @Input() color: 'red' = 'red';
+  @Input() color: 'red'|'blue'|'green'|'lime'|'pink' = 'red';
 
   //design by r7chardgh
   //src: https://uiverse.io/r7chardgh/ancient-starfish-5

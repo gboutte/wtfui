@@ -2,6 +2,21 @@
 :host{
   padding: 10px 3px;
   display: inline-block;
+
+  --color-red:rgb(255, 49, 49);
+  --color-secondary-red:rgb(255, 196, 196);
+
+  --color-blue: #3333f8;
+  --color-secondary-blue: #cdcdf8;
+
+  --color-green: #038303;
+  --color-secondary-green: #85ab85;
+
+  --color-lime: lime;
+  --color-secondary-lime: #d2d0d0;
+
+  --color-pink: pink;
+  --color-secondary-pink: #e59c9c;
   .button {
     display: flex;
     position: relative;
@@ -10,6 +25,26 @@
     transform-style: preserve-3d;
     transform: rotateX(45deg)rotateZ(45deg);
     cursor: pointer;
+    --color-button:var(--color-red);
+    --color-border-button:var(--color-secondary-red);
+    &.blue{
+
+      --color-button:var(--color-blue);
+      --color-border-button:var(--color-secondary-blue);
+    }
+    &.green{
+      --color-button:var(--color-green);
+      --color-border-button:var(--color-secondary-green);
+    }
+
+    &.lime{
+      --color-button:var(--color-lime);
+      --color-border-button:var(--color-secondary-lime);
+    }
+    &.pink{
+      --color-button:var(--color-pink);
+      --color-border-button:var(--color-secondary-pink);
+    }
 
     margin-top: -10px;
     margin-bottom: 17px;
@@ -20,7 +55,7 @@
       border-radius: 50%;
       top: 50%;
       left: 50%;
-      background-color: rgb(255, 49, 49);
+      background-color: var(--color-button);
       transform: translate(-50%,-50%);
       transform-style: preserve-3d;
       display: flex;
@@ -32,7 +67,7 @@
         width: 100%;
         height: 1em;
         left: 0;
-        background-color: rgb(255, 49, 49);
+        background-color: var(--color-button);
         transform: rotateZ(-45deg) translateY(-.5em);
         transition: height 150ms, transform 150ms;
       }
@@ -44,10 +79,10 @@
         top: 0;
         left: 0;
         border-radius: 50%;
-        background-color: rgb(255, 49, 49);
+        background-color: var(--color-button);
         transform: rotateZ(-45deg) translateY(-1em);
         transition: transform 150ms;
-        border: 1px solid rgb(255, 196, 196);
+        border: 1px solid var(--color-border-button);
       }
     }
     > .base {
