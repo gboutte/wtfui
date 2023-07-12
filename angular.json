@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/wtfui",
       "sourceRoot": "projects/wtfui/src",
-      "prefix": "lib",
+      "prefix": "wtf",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -45,7 +45,7 @@
       },
       "root": "projects/doc",
       "sourceRoot": "projects/doc/src",
-      "prefix": "app",
+      "prefix": "wtd",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-wtfui',
+  selector: 'wtf-wtfui',
   template: `
     <p>
       wtfui works!
