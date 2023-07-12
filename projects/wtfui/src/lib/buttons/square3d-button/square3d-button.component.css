@@ -1,3 +1,7 @@
+:host{
+  padding: 10px 3px;
+  display: inline-block;
+}
 .button {
   display: flex;
   position: relative;
@@ -6,9 +10,12 @@
   transform-style: preserve-3d;
   transform: rotateX(45deg)rotateZ(45deg);
   cursor: pointer;
+
+  margin-top: -10px;
+  margin-bottom: 17px;
 }
 
-.button > .red {
+.button > .small-button {
   position: absolute;
   width: 1.5em;
   height: 1.5em;
@@ -23,7 +30,7 @@
   align-items: center;
 }
 
-.red::before {
+.small-button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -34,7 +41,7 @@
   transition: height 150ms, transform 150ms;
 }
 
-.red::after {
+.small-button::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -84,12 +91,16 @@
   border-left: 1px solid #fff;
 }
 
-.button:active>.red::before {
+.button:active:not(:disabled)>.small-button::before {
   transform: rotateZ(-45deg) translateY(0);
   height: 0;
 }
 
-.button:active>.red::after {
+.button:active:not(:disabled)>.small-button::after {
   transform: rotateZ(-45deg) translateY(0);
 }
 
+
+.button:disabled>.small-button{
+  opacity: 0.4;
+}
