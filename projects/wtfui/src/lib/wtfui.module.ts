@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { WtfuiComponent } from './wtfui.component';
+import {ButtonsModule} from "./buttons/buttons.module";
 
 
 
 @NgModule({
   declarations: [
-    WtfuiComponent
   ],
   imports: [
+    ButtonsModule
   ],
   exports: [
-    WtfuiComponent
+    ButtonsModule
   ]
 })
 export class WtfuiModule { }
