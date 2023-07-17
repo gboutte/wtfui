@@ -1,9 +1,9 @@
 {
-  "name": "wtfui",
-  "version": "0.0.0",
+  "name": "@gboutte/wtfui",
+  "version": "0.0.3",
   "peerDependencies": {
-    "@angular/common": "^16.1.0",
-    "@angular/core": "^16.1.0"
+    "@angular/common": ">=15.1.0",
+    "@angular/core": ">=15.1.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
