@@ -26,13 +26,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build library
-        working-directory: ./projects/wtfui
-        run: ng build
-
-      # Tests
-      #- name: Run tests
-      #  run: yarn test
 
       # Configure Git
       - name: Git configuration
@@ -61,6 +54,11 @@ jobs:
           echo "RELEASE_TAG=beta" >> $GITHUB_ENV
         env:
           RELEASE_TYPE: ${{ github.event.inputs.release-type }}
+
+
+      - name: Build library
+        working-directory: ./projects/wtfui
+        run: ng build
 
       # Update changelog unreleased section with new version
       - name: Update changelog
