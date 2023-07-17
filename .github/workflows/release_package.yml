@@ -18,14 +18,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           registry-url: https://registry.npmjs.org/
-          node-version: '14'
+          node-version: '18'
 
-      - name: Install dependencies
+      - name: Install angular cli
         run: npm install -g @angular/cli@latest
+        
       - name: Install dependencies
         run: npm install
 
-      - name: Install dependencies
+      - name: Build library
         working-directory: ./projects/wtfui
         run: ng build
 
