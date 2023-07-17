@@ -6,7 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./square3d-button.component.scss']
 })
 export class Square3dButtonComponent {
-  @Input() type: string = "button";
+  @Input() type: "submit" | "reset" | "button" = "button";
   @Input() disabled: boolean = false;
   @Input() baseColor: 'yellow' = 'yellow';
   @Input() color: 'red'|'blue'|'green'|'lime'|'pink' = 'red';
