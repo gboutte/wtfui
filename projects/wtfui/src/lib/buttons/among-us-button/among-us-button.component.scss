@@ -1,0 +1,173 @@
+
+:host {
+  display: inline-block;
+
+  button {
+
+    --color-yellow: hsl(49deg 98% 60%);
+    --color-blue: #3333f8;
+    --color-green: #038303;
+    --color-lime: lime;
+    --color-pink: pink;
+    --color-red: #b71c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: var(--color-yellow);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    &.blue {
+      background: var(--color-blue);
+    }
+
+    &.lime {
+      background: var(--color-lime);
+    }
+
+    &.pink {
+      background: var(--color-pink);
+    }
+
+    &.green {
+      background: var(--color-green);
+    }
+    &.red {
+      background: var(--color-red);
+    }
+
+    svg {
+      transition: all .5s ease;
+      z-index: 2;
+    }
+    &:not(:disabled) {
+      &:active {
+        transform: scale(.9);
+        transition: all 100ms ease;
+      }
+
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          transform: scale(3) translate(50%);
+        }
+
+        .now {
+          transform: translateX(10px);
+          transition-delay: 300ms;
+        }
+
+        .play {
+          transform: translateX(200%);
+          transition-delay: 300ms;
+        }
+      }
+    }
+    &:disabled{
+      opacity: 0.8;
+      filter: grayscale(60%);
+    }
+    .play {
+      transition: all .5s ease;
+      transition-delay: 300ms;
+    }
+
+    .now {
+      position: absolute;
+      left: 0;
+      transform: translateX(-100%);
+      transition: all .5s ease;
+      z-index: 2;
+    }
+
+    .crewmate {
+
+      .crewmate-border {
+        fill: #212121;
+      }
+
+      .crewmate-shadow-visor-1 {
+        fill: #01579b;
+      }
+
+      .crewmate-shadow-visor-2 {
+        fill: #81d4fa;
+      }
+
+      .crewmate-shadow-visor-3 {
+        fill: #e1f5fe;
+      }
+
+      // Red crewmate (default)
+      .crewmate-background {
+        fill: #b71c1c;
+      }
+
+      .crewmate-background {
+        fill: #e53935;
+      }
+
+      &.crewmate-pink {
+        .crewmate-background {
+          fill: deeppink;
+        }
+
+        .crewmate-backpack {
+          fill: #b7176c;
+        }
+      }
+
+      &.crewmate-yellow {
+        .crewmate-background {
+          fill: hsl(49deg 98% 60%);
+        }
+
+        .crewmate-backpack {
+          fill: hsl(49, 72%, 37%);
+        }
+      }
+      &.crewmate-blue {
+        .crewmate-background {
+          fill: #3333f8;
+        }
+
+        .crewmate-backpack {
+          fill: #18188f;
+        }
+      }
+
+      &.crewmate-lime {
+        .crewmate-background {
+          fill: lime;
+        }
+
+        .crewmate-backpack {
+          fill: #0e880e;
+        }
+      }
+      &.crewmate-green {
+        .crewmate-background {
+          fill: #038303;
+        }
+
+        .crewmate-backpack {
+          fill: #0b540b;
+        }
+      }
+    }
+  }
+}
