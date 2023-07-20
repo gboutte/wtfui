@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import {ButtonsModule} from "./buttons/buttons.module";
+import {SwitchesModule} from "./switches/switches.module";
 
 
 
@@ -7,10 +8,12 @@ import {ButtonsModule} from "./buttons/buttons.module";
   declarations: [
   ],
   imports: [
-    ButtonsModule
+    ButtonsModule,
+    SwitchesModule,
   ],
   exports: [
-    ButtonsModule
+    ButtonsModule,
+    SwitchesModule,
   ]
 })
 export class WtfuiModule { }
