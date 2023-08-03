@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import {WtfuiModule} from "../../../wtfui/src/lib/wtfui.module";
 import {SharedDocModule} from "./shared-doc/shared-doc.module";
 import {ReactiveFormsModule} from "@angular/forms";
+import {ComponentsExamplesModule} from "./components-examples/components-examples.module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    WtfuiModule,
-    SharedDocModule,
-    ReactiveFormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        WtfuiModule,
+        SharedDocModule,
+        ReactiveFormsModule,
+        ComponentsExamplesModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

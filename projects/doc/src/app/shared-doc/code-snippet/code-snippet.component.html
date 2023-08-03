@@ -1,0 +1,13 @@
+<div>
+  <div class="example-run">
+    <ng-content></ng-content>
+  </div>
+  <div class="example-source">
+    <div class="example-code" *ngFor="let file of files">
+      {{getFilename(file)}}
+      <ng-template [ngIf]="filesContent[file]">
+        <pre>{{filesContent[file]}}</pre>
+      </ng-template>
+    </div>
+  </div>
+</div>
