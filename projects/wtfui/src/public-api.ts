@@ -14,3 +14,4 @@ export * from './lib/switches/rocker-switch/rocker-switch.component';
 export * from './lib/loaders/loaders.module';
 export * from './lib/loaders/double-dots-loader/double-dots-loader.component';
 export * from './lib/loaders/dvd-loader/dvd-loader.component';
+export * from './lib/loaders/camp-loader/camp-loader.component';

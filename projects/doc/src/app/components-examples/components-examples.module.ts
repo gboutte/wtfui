@@ -10,6 +10,7 @@ import { DoubleDotsLoaderExampleComponent } from './loaders/double-dots-loader-e
 import {LoadersModule} from "../../../../wtfui/src/lib/loaders/loaders.module";
 import {WtfuiModule} from "../../../../wtfui/src/lib/wtfui.module";
 import { DvdLoaderExampleComponent } from './loaders/dvd-loader-example/dvd-loader-example.component';
+import { CampLoaderExampleComponent } from './loaders/camp-loader-example/camp-loader-example.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { DvdLoaderExampleComponent } from './loaders/dvd-loader-example/dvd-load
     RockerSwitchExampleComponent,
     DoubleDotsLoaderExampleComponent,
     DvdLoaderExampleComponent,
+    CampLoaderExampleComponent,
   ],
   exports: [
     AmongUsButtonExampleComponent,
@@ -26,6 +28,7 @@ import { DvdLoaderExampleComponent } from './loaders/dvd-loader-example/dvd-load
     RockerSwitchExampleComponent,
     DoubleDotsLoaderExampleComponent,
     DvdLoaderExampleComponent,
+    CampLoaderExampleComponent,
   ],
   imports: [
     CommonModule,
