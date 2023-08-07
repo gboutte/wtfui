@@ -4,13 +4,15 @@ import { ButtonsPageComponent } from './buttons-page/buttons-page.component';
 import { SwitchesPageComponent } from './switches-page/switches-page.component';
 import {ComponentsExamplesModule} from "../components-examples/components-examples.module";
 import {SharedDocModule} from "../shared-doc/shared-doc.module";
+import { LoadersPageComponent } from './loaders-page/loaders-page.component';
 
 
 
 @NgModule({
   declarations: [
     ButtonsPageComponent,
-    SwitchesPageComponent
+    SwitchesPageComponent,
+    LoadersPageComponent
   ],
     imports: [
         CommonModule,
