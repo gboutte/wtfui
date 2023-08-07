@@ -9,6 +9,7 @@ import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DoubleDotsLoaderExampleComponent } from './loaders/double-dots-loader-example/double-dots-loader-example.component';
 import {LoadersModule} from "../../../../wtfui/src/lib/loaders/loaders.module";
 import {WtfuiModule} from "../../../../wtfui/src/lib/wtfui.module";
+import { DvdLoaderExampleComponent } from './loaders/dvd-loader-example/dvd-loader-example.component';
 
 
 @NgModule({
@@ -17,12 +18,14 @@ import {WtfuiModule} from "../../../../wtfui/src/lib/wtfui.module";
     Square3dButtonExampleComponent,
     RockerSwitchExampleComponent,
     DoubleDotsLoaderExampleComponent,
+    DvdLoaderExampleComponent,
   ],
   exports: [
     AmongUsButtonExampleComponent,
     Square3dButtonExampleComponent,
     RockerSwitchExampleComponent,
     DoubleDotsLoaderExampleComponent,
+    DvdLoaderExampleComponent,
   ],
   imports: [
     CommonModule,
