@@ -4,6 +4,7 @@ import { DoubleDotsLoaderComponent } from './double-dots-loader/double-dots-load
 import { DvdLoaderComponent } from './dvd-loader/dvd-loader.component';
 import { CampLoaderComponent } from './camp-loader/camp-loader.component';
 import { HourglassLoaderComponent } from './hourglass-loader/hourglass-loader.component';
+import { FireLoaderComponent } from './fire-loader/fire-loader.component';
 
 
 
@@ -12,7 +13,8 @@ import { HourglassLoaderComponent } from './hourglass-loader/hourglass-loader.co
     DoubleDotsLoaderComponent,
     DvdLoaderComponent,
     CampLoaderComponent,
-    HourglassLoaderComponent
+    HourglassLoaderComponent,
+    FireLoaderComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +23,8 @@ import { HourglassLoaderComponent } from './hourglass-loader/hourglass-loader.co
     DoubleDotsLoaderComponent,
     DvdLoaderComponent,
     CampLoaderComponent,
-    HourglassLoaderComponent
+    HourglassLoaderComponent,
+    FireLoaderComponent,
   ]
 })
 export class LoadersModule { }

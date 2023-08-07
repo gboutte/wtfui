@@ -12,6 +12,7 @@ import {WtfuiModule} from "../../../../wtfui/src/lib/wtfui.module";
 import { DvdLoaderExampleComponent } from './loaders/dvd-loader-example/dvd-loader-example.component';
 import { CampLoaderExampleComponent } from './loaders/camp-loader-example/camp-loader-example.component';
 import { HourglassLoaderExampleComponent } from './loaders/hourglass-loader-example/hourglass-loader-example.component';
+import { FireLoaderExampleComponent } from './loaders/fire-loader-example/fire-loader-example.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HourglassLoaderExampleComponent } from './loaders/hourglass-loader-exam
     DvdLoaderExampleComponent,
     CampLoaderExampleComponent,
     HourglassLoaderExampleComponent,
+    FireLoaderExampleComponent,
   ],
   exports: [
     AmongUsButtonExampleComponent,
@@ -32,6 +34,7 @@ import { HourglassLoaderExampleComponent } from './loaders/hourglass-loader-exam
     DvdLoaderExampleComponent,
     CampLoaderExampleComponent,
     HourglassLoaderExampleComponent,
+    FireLoaderExampleComponent
   ],
   imports: [
     CommonModule,
