@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DoubleDotsLoaderComponent } from './double-dots-loader/double-dots-loader.component';
 import { DvdLoaderComponent } from './dvd-loader/dvd-loader.component';
 import { CampLoaderComponent } from './camp-loader/camp-loader.component';
+import { HourglassLoaderComponent } from './hourglass-loader/hourglass-loader.component';
 
 
 
@@ -10,7 +11,8 @@ import { CampLoaderComponent } from './camp-loader/camp-loader.component';
   declarations: [
     DoubleDotsLoaderComponent,
     DvdLoaderComponent,
-    CampLoaderComponent
+    CampLoaderComponent,
+    HourglassLoaderComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { CampLoaderComponent } from './camp-loader/camp-loader.component';
   exports: [
     DoubleDotsLoaderComponent,
     DvdLoaderComponent,
-    CampLoaderComponent
+    CampLoaderComponent,
+    HourglassLoaderComponent
   ]
 })
 export class LoadersModule { }

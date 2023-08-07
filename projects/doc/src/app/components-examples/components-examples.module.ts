@@ -11,6 +11,7 @@ import {LoadersModule} from "../../../../wtfui/src/lib/loaders/loaders.module";
 import {WtfuiModule} from "../../../../wtfui/src/lib/wtfui.module";
 import { DvdLoaderExampleComponent } from './loaders/dvd-loader-example/dvd-loader-example.component';
 import { CampLoaderExampleComponent } from './loaders/camp-loader-example/camp-loader-example.component';
+import { HourglassLoaderExampleComponent } from './loaders/hourglass-loader-example/hourglass-loader-example.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { CampLoaderExampleComponent } from './loaders/camp-loader-example/camp-l
     DoubleDotsLoaderExampleComponent,
     DvdLoaderExampleComponent,
     CampLoaderExampleComponent,
+    HourglassLoaderExampleComponent,
   ],
   exports: [
     AmongUsButtonExampleComponent,
@@ -29,6 +31,7 @@ import { CampLoaderExampleComponent } from './loaders/camp-loader-example/camp-l
     DoubleDotsLoaderExampleComponent,
     DvdLoaderExampleComponent,
     CampLoaderExampleComponent,
+    HourglassLoaderExampleComponent,
   ],
   imports: [
     CommonModule,
