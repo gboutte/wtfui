@@ -17,3 +17,4 @@ export * from './lib/loaders/dvd-loader/dvd-loader.component';
 export * from './lib/loaders/camp-loader/camp-loader.component';
 export * from './lib/loaders/hourglass-loader/hourglass-loader.component';
 export * from './lib/loaders/fire-loader/fire-loader.component';
+export * from './lib/loaders/rotating-cube-loader/rotating-cube-loader.component';

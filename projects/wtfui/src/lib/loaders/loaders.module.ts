@@ -5,6 +5,7 @@ import { DvdLoaderComponent } from './dvd-loader/dvd-loader.component';
 import { CampLoaderComponent } from './camp-loader/camp-loader.component';
 import { HourglassLoaderComponent } from './hourglass-loader/hourglass-loader.component';
 import { FireLoaderComponent } from './fire-loader/fire-loader.component';
+import { RotatingCubeLoaderComponent } from './rotating-cube-loader/rotating-cube-loader.component';
 
 
 
@@ -14,7 +15,8 @@ import { FireLoaderComponent } from './fire-loader/fire-loader.component';
     DvdLoaderComponent,
     CampLoaderComponent,
     HourglassLoaderComponent,
-    FireLoaderComponent
+    FireLoaderComponent,
+    RotatingCubeLoaderComponent
   ],
   imports: [
     CommonModule
@@ -25,6 +27,7 @@ import { FireLoaderComponent } from './fire-loader/fire-loader.component';
     CampLoaderComponent,
     HourglassLoaderComponent,
     FireLoaderComponent,
+    RotatingCubeLoaderComponent,
   ]
 })
 export class LoadersModule { }

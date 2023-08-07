@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `DvdLoaderComponent`
 - Added `CampLoaderComponent`
 - Added `HourglassLoaderComponent`
+- Added `FireLoaderComponent`
+- Added `RotatingCubeLoaderComponent`
 
 ## 0.0.8 - 2023-07-20
 ### Added
